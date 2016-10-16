@@ -1,0 +1,73 @@
+# ~/.offlineimaprc
+
+[general]
+ui = ttyui
+accounts = riseup2,riseup
+maxsyncaccounts = 2
+pythonfile = ~/.mutt/nametrans.py
+
+[mbnames]
+enabled = yes
+filename = ~/.mutt/mailboxes
+header = "mailboxes "
+peritem = "+%(accountname)s/%(foldername)s"
+sep = " "
+footer = "\n"
+
+[Account riseup]
+localrepository = riseup-local
+remoterepository = riseup-remote
+# background: minutes between syncs; num quick-syncs between auto refreshes
+autorefresh = 3
+quick = 6
+
+[Repository riseup-local]
+type = Maildir
+localfolders = ~/.mutt/maildir/riseup
+nametrans = nt_local
+
+[Repository riseup-remote]
+auth_mechanisms = LOGIN
+type = IMAP
+remotehost = mail.riseup.net
+remoteuser = 8100d1r0n@riseup.net
+remotepasseval = get_pass()
+realdelete = no
+postsynchook = notmuch new
+maxconnections = 3
+nametrans = nt_remote
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+# background: seconds to hold connection between; requires 'autorefresh' set
+keepalive = 60
+holdconnectionopen = yes
+folderfilter = lambda foldername: foldername in ['INBOX','INBOX.Sent', 'INBOX.Drafts']
+
+[Account riseup2]
+localrepository = riseup2-local
+remoterepository = riseup2-remote
+# background: minutes between syncs; num quick-syncs between auto refreshes
+autorefresh = 3
+quick = 6
+
+[Repository riseup2-local]
+type = Maildir
+localfolders = ~/.mutt/maildir/riseup2
+nametrans = nt_local
+
+[Repository riseup2-remote]
+auth_mechanisms = LOGIN
+type = IMAP
+remotehost = mail.riseup.net
+remoteuser = *********@riseup.net
+remotepasseval = get_pass()
+realdelete = no
+postsynchook = notmuch new
+maxconnections = 3
+nametrans = nt_remote
+ssl = yes
+sslcacertfile = /etc/ssl/certs/ca-certificates.crt
+# background: seconds to hold connection between; requires 'autorefresh' set
+keepalive = 60
+holdconnectionopen = yes
+folderfilter = lambda foldername: foldername in ['INBOX','INBOX.Sent', 'INBOX.Drafts']

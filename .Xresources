@@ -1,0 +1,58 @@
+!
+! ~/.Xresources
+!
+! X Settings
+Xcursor.theme: Neutral
+Xcursor.size: 14
+! Colour Scheme
+#include "/home/wolf/.config/termcolours/hybrid"
+
+! URxvt Options
+URxvt.depth: 32
+URxvt.scrollstyle: rxvt
+URxvt.scrollBar: off
+URxvt.urgentOnBell: true
+URxvt.visualBell: true
+URxvt.cursorColor: #00FF00
+URxvt.cursorBlink: false
+URxvt.cursorUnderline: false
+URxvt.termName: rxvt-256color
+URxvt.bell-command: aplay /home/wolf/code/beep.wav
+! bold, italic, underline
+URxvt.colorBD: #B5BD68
+URxvt.colorIT: #B294BB
+URxvt.colorUL: #81A2BE
+!URxvt.background: black
+!URxvt.foreground: white
+!URxvt.xftAntialias: true
+! font
+URxvt.font: xft:Inconsolata\ for\ Powerline:size=12, xft:DejaVu\ Sans\ Mono:size=10.5
+URxvt.boldFont:  xft:Inconsolata\ for\ Powerline:size=12, xft:DejaVu\ Sans\ Mono:size=10.5
+URxvt.italicFont: xft:Inconsolata\ for\ Powerline:size=12, xft:DejaVu\ Sans\ Mono:size=10.5
+URxvt.boldItalicFont: xft:Inconsolata\ for\ Powerline:size=12, xft:DejaVu\ Sans\ Mono:size=10.5
+URxvt.letterSpace: -1
+
+!Font size
+URxvt.keysym.C-Up:     font-size:increase
+URxvt.keysym.C-Down:   font-size:decrease
+URxvt.keysym.C-S-Up:   font-size:incglobal
+URxvt.keysym.C-S-Down: font-size:decglobal
+
+! extensions
+URxvt.perl-ext-common: default,clipboard,keyboard-select,url-select,font-size,bell-command
+
+! clipboard
+URxvt.keysym.M-c: perl:clipboard:copy
+URxvt.keysym.M-v: perl:clipboard:paste
+URxvt.keysym.M-C-v: perl:clipboard:paste_escaped
+URxvt.clipboard.copycmd:  xsel -ib
+URxvt.clipboard.pastecmd: xsel -ob
+! keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
+URxvt.keysym.M-s: perl:keyboard-select:search
+! url-select
+URxvt.keysym.M-u: perl:url-select:select_next
+URxvt.url-select.autocopy: true
+URxvt.url-select.button: 1
+URxvt.url-select.launcher: /usr/bin/firefox
+URxvt.url-select.underline: true

@@ -1,0 +1,9 @@
+split-window -v -l 12 'voltron view disasm'
+split-window -h -l 60 'voltron view bt'
+select-pane -D
+split-window -h -l 23 'voltron view reg -v'
+select-pane -L
+split-window -v -l 14 'voltron view cmd "x/32x \$pc"'
+swap-pane -U
+split-window -v -l 11 'voltron view stack'
+select-pane -D

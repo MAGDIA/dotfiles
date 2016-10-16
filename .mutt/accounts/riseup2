@@ -1,0 +1,12 @@
+  set from      = "**********@riseup.net"
+  set sendmail  = "/usr/bin/msmtp -a riseup2"
+  set mbox      = "+riseup2/inbox"
+unset record
+  set postponed     = "+riseup2/draft"
+  set signature     = ~/.mutt/accounts/riseup2_sig
+  set pgp_sign_as=0x1D46E446 
+
+color status blue default
+
+# vim: ft=muttrc
+

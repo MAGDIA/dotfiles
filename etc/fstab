@@ -1,0 +1,8 @@
+# /dev/mapper/root LABEL=root
+UUID=9bb969b7-bc26-4d11-b763-5d5be0a676be	/         	f2fs      	rw,relatime,discard,background_gc=on,inline_data,active_logs=6	0 0
+
+# /dev/sda1 LABEL=boot
+UUID=b36a477e-b2ef-4d16-b1f6-4ee91ba35af8	/boot     	btrfs     	rw,relatime,ssd,discard,space_cache,subvolid=5,subvol=/	0 0
+
+#Swap file
+/swapfile swap swap defaults 0 0

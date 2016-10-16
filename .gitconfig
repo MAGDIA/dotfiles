@@ -1,0 +1,39 @@
+#
+# ~/.gitconfig
+#
+
+[user]
+    name = 8100d1r0n
+    email = 8100d1r0n@riseup.net
+[color]
+    ui = true
+[color "branch"]
+    current = green bold
+    remote = red bold
+[color "diff"]
+    meta = yellow
+    frag = cyan bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = green bold
+    changed = red bold
+    untracked = red bold
+[core]
+    editor = vim
+    excludesfile = /home/wolf/.gitignore_global
+[github]
+    user = 8100d1r0n
+[diff]
+    tool = vimdiff
+[difftool]
+    prompt = false
+[alias]
+    l = log --pretty=format:'%C(yellow)%h%C(magenta)%d%Creset %s %C(cyan)%cr%Creset' --graph
+    s = status -sb
+[push]
+    default = simple
+[merge]
+    tool = vimdiff
+[mergetool]
+    keepBackup = false
