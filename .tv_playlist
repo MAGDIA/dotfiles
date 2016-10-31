@@ -1,13 +1,18 @@
 http://yayin8.canliyayin.org:1935/benguturk/benguturk/playlist.m3u8 
-http://188.72.131.226/kanald.m3u8 
-http://188.72.131.226/trt1.m3u8 
-http://188.72.131.226/star.m3u8
-http://188.72.131.226/show.m3u8 
-http://kanalturk-live.ercdn.com/kanalturk.m3u8 
-http://188.72.131.226/fox.m3u8 
+http://live.netd.com.tr/S1/HLS_LIVE/tv2/1000/prog_index.m3u8
+http://live.netd.com.tr/S1/HLS_LIVE/kanald/1000/prog_index.m3u8
+http://85.132.59.163:1234/startv
+http://mn-i.mncdn.com/showtv_ios/smil:showtv.smil/chunklist_w1562521756_b348000.m3u8\?token=39e2229af75d66be900a842ec624ef0b1eb87aa219264c42
 http://188.138.9.246/S2/HLS_LIVE/cnn_turk/index.m3u8
 http://188.72.131.226/atv.m3u8 
 http://rtmp.infomaniak.ch/livecast/rougetv/playlist.m3u8
 http://77.36.61.45:8010/CCTVNews.m3u8 
 http://77.36.61.45:8010/RussiaToday.m3u8
 http://tst.es.flash.glb.ipercast.net/tst.es-live/live/playlist.m3u8 #hit
+http://37.77.2.236:1935/beyaz/beyaz.stream/playlist.m3u8
+http://fox.staging.viviso.tv/480/live.m3u8 #foxhd
+http://yayin2.canlitv.life/foxtv.m3u8
+rtmp://istimeglb.mediatriple.net/webtv/webtv_wowza1
+http://trtcanlitv-lh.akamaihd.net/i/TRT1HD_1@181842/master.m3u8
+http://149.255.152.69/hls-live/livepkgr/kanal7/kanal7/kanal7.m3u8
+http://www.dailymotion.com/video/x31omum_besiktas-tv-canli-yayin_sport
