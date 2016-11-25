@@ -17,7 +17,7 @@
 
 # Create a single ssh-agent process on login
 if (( $+commands[keychain] )); then
-  eval $(keychain --eval --agents ssh -Q --quiet git_rsa)
+  eval $(keychain -q --nolock --agents ssh,gpg --eval git_rsa 0x1D46E446)
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*

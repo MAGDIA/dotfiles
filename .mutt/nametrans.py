@@ -44,5 +44,8 @@ def exclude(excludes):
 
     return inner
  
-def get_pass():
-    return check_output("gpg --no-tty -dq /home/wolf/.passwd/mail-passwd.gpg", shell=True).strip("\n")
+def rise1():
+    return check_output("gpg --no-tty -dq /home/wolf/.passwd/8100d1r0n.gpg", shell=True).strip("\n")
+def rise2():
+    return check_output("gpg --no-tty -dq /home/wolf/.passwd/*********.gpg", shell=True).strip("\n")
+

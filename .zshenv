@@ -6,14 +6,15 @@
 #
 # for GTK styles in Qt
 export GTK2_RC_FILES=$HOME/.gtkrc-2.0
+export GTK_PATH=:/usr/lib/gtk-2.0
 # hacks to respect XDG_CACHE_HOME
 export CCACHE_DIR="$HOME/.ccache"
 #
 CHROOT=$HOME/chroot
 export GOPATH=$HOME/go
 export PYTHONSTARTUP=$HOME/.pythonrc
-export GEM_PATH=$HOME/.rvm/gems/ruby-2.2.3
-export GEM_HOME=$HOME/.rvm/gems/ruby-2.2.3
+export GEM_PATH=$HOME/.gem/ruby/2.2.3/bin
+export GEM_HOME=$HOME/.gem/ruby/2.2.3/
 export ANDROID_HOME=/opt/android-sdk
 [[ -d $(ruby -rubygems -e "puts Gem.user_dir")/bin ]] && export PATH=$PATH:$(ruby -rubygems -e "puts Gem.user_dir")/bin
 export GNUPGHOME="/home/wolf/.gnupg"
@@ -82,7 +83,11 @@ alias suspend="systemctl suspend"
 alias hibernate="systemctl hibernate"
 alias sumcontrol="sha256sum -c  < ~/code/systemsums.txt |grep FAILED"
 alias snapconsole="sudo snapconsole"
-alias passgen="< /dev/urandom tr -cd \[:graph:\] | fold -w 20 | head -n 1"
+alias passgen="< /dev/urandom tr -cd \[:graph:\] | fold -w 30 | head -n 1"
+alias vime='vim -u $HOME/.vimencrypt -x'
+alias gvime='gvim -u $HOME/.vimencrypt -x'
+alias nv='nvim'
+alias nview='nvim -R'
 #alias rake="bundle exec rake"
 # rvm
 # Ensure that a non-login, non-interactive shell has a defined environment.
