@@ -31,7 +31,7 @@ source /usr/bin/virtualenvwrapper.sh
 source /usr/share/GNUstep/Makefiles/GNUstep.sh
 source /home/wolf/.git-prompt.sh
 
-#archlinuxinfo
+archlinuxinfo
 
 #
 # Personalised key bindings

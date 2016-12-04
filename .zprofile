@@ -45,11 +45,11 @@ path=(
   $HOME/.rbenv/bin
   $HOME/.rbenv/shims
   $HOME/.cabal/bin
-  /usr/lib/colorgcc/bin
+  /usr/lib/{ccache,colorgcc}/bin
   /usr/bin/vendor_perl
   /usr/pkg/{bin,sbin}
   $HOME/.rbenv/plugins/ruby-build/bin
-  $HOME/.rvm/gems/ruby-2.2.3/bin
+  $HOME/.rvm/gems/ruby-2.3.0/bin
   $path
 )
 

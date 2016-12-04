@@ -16,10 +16,10 @@
 # gccVersion: 4.1.1 
 # Define the paths to the actual location of the various compilers. 
 # (Currently, colorgcc only understands these: g++ gcc c++ cc g77 f77 gcj) 
-#g++: /usr/bin/g++ 
-#gcc: /usr/bin/gcc 
-#c++: /usr/bin/g++ 
-#cc:  /usr/bin/gcc 
+g++: /usr/lib/ccache/bin/g++
+gcc: /usr/lib/ccache/bin/gcc 
+c++: /usr/lib/ccache/bin/c++ 
+cc:  /usr/lib/ccache/bin/cc 
 #g77: /usr/bin/g77 
 #f77: /usr/bin/g77 
 #gcj: /usr/bin/gcj 
